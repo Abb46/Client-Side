@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>Blood Pressure check online</head>
+<style>
+body {background-color: teal;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+h1   {	padding: 80px;
+		color: maroon;
+		font-family: "Century Gothic";
+		font-size: 100%;
+		text-align: center;
+		font-style: normal;
+		font-variant: normal; 
+		font-weight: 100; 
+		line-height: 26.4px;
+				}
+				
+h2   {	padding: 10px;
+		color: maroon;
+		font-family: "Century Gothic";
+		font-size: 100%;
+		text-align: center;
+		font-style : normal;
+		font-variant: normal;
+		font-weight: 100;
+		line-height: 20px;
+				}
+				
+h3   { padding: 10px;
+		color: maroon;
+		font-family: "Century Gothic";
+		font-size: 100%;
+		text-align: center;
+		font-style : normal;
+		font-variant: normal;
+		font-weight: 100;
+		line-height: 20px
+				}
+		
+p    {color: black;
+		border: 100px red;
+		
+		margin:100px;
+}
+
+#bp {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+
+}
+
+</style>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+display_c();
+ }
+ <body onload=display_ct();>
+<span id='ct' ></span>
+
+</script>
+</head>
+
+
+
+<body>
+
+
+<div class="topnav">
+  <a class="Home" href="bloodpressure1.html">Home</a>
+  <a href="Exercise.html">Exercise</a>
+  <a href="BP Input.html">Input Blood Pressure</a>
+  <a href="Blood Pressure Slide Show.html">Blood Pressure Slide Show</a>
+  <a href="About Us.html">About Us</a>
+
+</div>
+<br>
+<script type="text/javascript"> 
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+display_c();
+ }
+</script>
+
+
+<body onload=display_ct();>
+<span id='ct' ></span>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<h1>Blood Pressure Check Online</h1>
+
+<p>This web site will check your blood pressure levels and tell you if they are within acceptable levels. You will have to check your blood pressure with a blood pressure monitor and then input your reading to this web site, which will then tell you if your blood pressure levels are within acceptable levels. This web site will also provide information on how to improve your overlall health, with the emphasis on eating a balanced diet and the importance of taking regular exercise.</p>
+
+<h2>Blood Pressure explained from a Medical Perspective</h2>
+
+<p>Measure your blood pressure regularly. It is quick and painless, and it is the only way to know whether your pressure is high. You can check your blood pressure at a doctor’s office, at a pharmacy, or at home. Blood pressure monitors are available to buy from any department store or pharmacy. Blood pressure monitors are easy to use and they can be bought from any </p>
+
+<h3>How Blood pressure is measured</h3>
+
+<p>First, a doctor or other health professional wraps a special cuff around your arm. The cuff has a gauge on it that will read your blood pressure. The doctor then inflates the cuff to squeeze your arm.</p>
+
+<p>After the cuff is inflated, the doctor will slowly let air out. While doing this, he or she will listen to your pulse with a stethoscope and watch the gauge. The gauge uses a scale called “millimeters of mercury” (mmHg) to measure the pressure in your blood vessels.Another option is to get a blood pressure measurement from the machines available at many pharmacies. There are also home monitoring devices for blood pressure that you can use yourself.</p>
+
+<h3>What Blood Pressure numbers mean</h3>
+
+<p>Blood pressure is measured using two numbers. The first number, called systolic blood pressure, measures the pressure in your blood vessels when your heart beats. The second number, called diastolic blood pressure, measures the pressure in your blood vessels when your heart rests between beats.If the measurement reads 120 systolic and 80 diastolic, you would say “120 over 80” or write “120/80 mmHg.</p>
+<br>
+<img src="images/BP.12.jpg" id="bp">
+<br>
+<br>
+
+
+<p>The image above shows a graphical presentation of Blood Pressure readings</p>
+<br>
+<p>High blood pressure is the main risk factor for stroke and a major risk factor for heart attack, heart failure and kidney disease. There is also increasing evidence that it is a risk factor for vascular dementia. (1)
+High blood pressure is a level consistently at or above 140mmHg and/or 90mmHg. (2)
+Approximately 16 million people in the UK have high blood pressure. (3)
+30 per cent of women and 32 per cent of men have high blood pressure. (5)
+Up to the age of 64 there are higher rates of men with high blood pressure than women. (5)</p>
+
+</body>
+</html>
+
